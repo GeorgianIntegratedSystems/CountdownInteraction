@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import ge.gis.countdowninteraction.FragmenUnits.setFragment
+import ge.gis.countdowninteraction.HumanInteractChange.Interaction
 
 
 class NoInteraction : Fragment() {
@@ -17,13 +18,12 @@ class NoInteraction : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_no_interaction, container, false)
+//        Interaction = false
         Toast.makeText(activity,"Fragment No Interaction",Toast.LENGTH_LONG).show()
         Log.i("Activity", "Fragment No Interaction")
         view.setOnClickListener {
                setFragment(MainFragment())
-
             }
-
         return view
     }
 

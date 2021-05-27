@@ -11,7 +11,7 @@ object FragmenUnits {
 
         var fragmentManager: FragmentManager? = null
         fun setFragment(fragment: Fragment) {
-            Log.d("TAG", "Transaction for fragment : " + fragment.javaClass.simpleName)
+            Log.d("Fragment Units", "Transaction for fragment : " + fragment.javaClass.simpleName)
             val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
             transaction.setCustomAnimations(
                     R.anim.enter_fade_in_right,
