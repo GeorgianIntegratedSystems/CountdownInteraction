@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import ge.gis.countdowninteraction.FragmenUnits.setFragment
+import ge.gis.countdowninteraction.MainActivity.Companion.tts
 
 class MainFragment : Fragment() {
 
@@ -21,6 +22,10 @@ class MainFragment : Fragment() {
         view.setOnClickListener {
             setFragment(NoInteraction())
         }
+                tts!!.speakOut("გამარჯობა,! რით შემიძლია დაგეხმაროთ?")
+
+
+
 
         return view
     }

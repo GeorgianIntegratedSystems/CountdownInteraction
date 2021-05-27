@@ -19,6 +19,7 @@ class NoInteraction : Fragment() {
         val view = inflater.inflate(R.layout.fragment_no_interaction, container, false)
         Toast.makeText(activity,"Fragment No Interaction",Toast.LENGTH_LONG).show()
         Log.i("Activity", "Fragment No Interaction")
+
         view.setOnClickListener {
                setFragment(MainFragment())
 
